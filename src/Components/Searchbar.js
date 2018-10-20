@@ -69,7 +69,7 @@ class SearchBar extends Component{
         }}
         initialCenter={{
             lat: this.lat,//Kochi Lat and lon.
-            lng: this.lon
+            lng: this.lon//initial lat
             }}>
 
         <Marker onClick={this.onMarkerClick}
