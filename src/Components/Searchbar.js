@@ -72,8 +72,11 @@ class SearchBar extends Component{
             lng: this.lon//initial lat
             }}>
 
-        <Marker onClick={this.onMarkerClick}
-                name={'Current location'} />
+        <Marker
+    title={this.place}
+    name={'Current Location'}
+    position={{lat: this.lat, lng: this.lon}} />
+        
                 
         <InfoWindow onClose={this.onInfoWindowClose}>
             <div>
