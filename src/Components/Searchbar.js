@@ -5,7 +5,7 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import axios from 'axios';
 import _ from 'lodash';
 
-const API="AIzaSyAq06l5RUVfib62IYRQacLc-KAy0XIWAVs"
+const API="AIzaSyATXdLQPruIMYrNhmraxiutk5qLygKnuLc"
 var location;
 @observer
 class SearchBar extends Component{
@@ -62,7 +62,7 @@ class SearchBar extends Component{
             <p>Longitude is : {this.lon}</p>
             <p>Place : {this.place}</p>
         
-        <Map google={this.props.google} zoom={14}
+        <Map google={this.props.google} zoom={10}
         center={{
             lat: this.lat,
             lng: this.lon
